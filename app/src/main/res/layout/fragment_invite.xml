@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#d8143e"
+    >
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img"
+            android:src="@drawable/invite"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_below="@+id/img"
+            android:id="@+id/btn_invite"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/layoutDots"
+            app:cardCornerRadius="35dp"
+            app:cardBackgroundColor="#800080"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/raleway"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/slide_desc"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:gravity="center_horizontal"
+                android:text="Invite Friends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
